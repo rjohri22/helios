@@ -54,7 +54,7 @@
             <div class="cm-page-container">
                 <div>
                     <!-- TradingView Widget BEGIN -->
-                    <div class="tradingview-widget-container">
+                    <!-- <div class="tradingview-widget-container">
                         <div class="tradingview-widget-container__widget"></div>
                         <div class="tradingview-widget-copyright"><a href="https://in.tradingview.com/markets/"
                                 rel="noopener" target="_blank"></div>
@@ -104,7 +104,7 @@
                                 "locale": "in"
                             }
                         </script>
-                    </div>
+                    </div> -->
                     <!-- TradingView Widget END -->
                 </div>
                 <header class="header">
@@ -140,7 +140,7 @@
                                         <div class="right-nav-menu">
                                             <!-- 14/04/2021 -->
                                             <ul>
-                                                <li class="d-xs-none call-desktop"
+                                                <!-- <li class="d-xs-none call-desktop"
                                                     style="height:20px;width:170px">
                                                      <a href="javascript:void(0)" class=""
                                                         data-dropdown="dropdown " style="color:black;font-size:16px" class="btn btn-info"><button class="btn btn-warning">File Income
@@ -153,22 +153,30 @@
                                                 </li>
                                                 <li class="d-xs-none call-desktop">
                                                     &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                                                </li>
+                                                </li> -->
                                                 <!-- 14/04/2021 -->
                                                 <ul>
+                                                    
                                                     {{-- <li class="d-xs-none call-desktop">
+
+
+
+                                                        
                                                         <div class="custom-dropdown">
-                                                            <a data-toggle="modal" data-target="#loginexampleModal">
+                                                            <a data-toggle="modal" data-target="#loginexampleModal" style="">
                                                                 <i class="fa fa-user" aria-hidden="true"></i>
-                                                                <span style="color:blue">Login</span>
+                                                                <span style="color:blue;font-size:10px!important">Login</span>
                                                             </a>
                                                         </div>
 
                                                     </li> --}}
+                                                    
                                                     <li class="d-xs-none call-desktop" id="loginformpopupopen">
                                                         <div class="new-notification-bell custom-dropdown dropdown">
+                                                        <!-- <button class="btn btn-light" style="width:50px;margin-left:-40px"> -->
                                                             <a href="javascript:void(0)" class="btn-bells"
-                                                                data-dropdown="dropdown">Login</a>
+                                                                data-dropdown="dropdown" style="color:blue;margin-left:-0px;font-size:10px;">Login</a>
+                                                    <!-- </button> -->
                                                             <div class="custom-dropdown-container dropdown-open-menu"
                                                                 id="">
                                                                 <div class="notification-bell-box" id="">
@@ -340,6 +348,24 @@
                                                 </ul>
                                                 <!-- 14/04/2021 -->
                                                 <li class="d-xs-none call-desktop">
+                                                     <!-- <a href="javascript:void(0)" class=""
+                                                        data-dropdown="dropdown " style="color:black;font-size:16px" class="btn"><button class="btn">File Income
+                                                        Tax</button></a> -->
+                                                        <button class="btn btn-light">
+                                                        <a href="javascript:void(0)" class="btn-bells"
+                                                                data-dropdown="dropdown" style="color:blue;font-size:10px;">File Income
+                                                        Tax</a>
+                                                    </button>
+                                                </li>
+                                                <li class="d-xs-none call-desktop">
+                                                    <!-- <a href="<?php echo route('family');?>" class="btn-bells"
+                                                       style="color:black;font-size:5px!important"><button class="btn">Family Know After Me</button></a> -->
+                                                       <button class="btn btn-light">
+                                                       <a href="javascript:void(0)" class="btn-bells"
+                                                                data-dropdown="dropdown" style="color:blue;font-size:10px;">Family Know After Me</button></a>
+                                                    </button>
+                                                </li>
+                                                <li class="d-xs-none call-desktop">
                                                     <div class="custom-dropdown dropdown google-dropdown">
                                                         <a href="" data-dropdown="dropdown"
                                                             class="js-login-status">
@@ -358,6 +384,7 @@
                                                         </select>
                                                     </div>
                                                 </li>
+                                                
                                             </ul>
                                             <!-- 14/04/2021 -->
                                         </div>
