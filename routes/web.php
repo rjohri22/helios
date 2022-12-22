@@ -72,6 +72,18 @@ Route::get('afterregister/thank-you',[AuthController::class, 'afterregister']);
  Route::get('/family',function(){
         return view('family');
     })->name('family');
+    Route::get('/creditcards', function () {
+        return view('creditcards');
+    });
+    
+    Route::get('/bonds', function () {
+        return view('bonds');
+    });
+    
+    Route::get('/fd', function () {
+        return view('fd');
+    });
+
 // =====================================================================================
 Route::middleware(['auth','verify'])->group(function () {
 
@@ -96,9 +108,6 @@ Route::middleware(['auth','verify'])->group(function () {
     //     return view('preipo');
     // });
 
-    Route::get('/bonds', function () {
-        return view('bonds');
-    });
 
     Route::get('/sipcalculator', function () {
         return view('sipcalculator');
@@ -123,21 +132,12 @@ Route::middleware(['auth','verify'])->group(function () {
         return view('searchcompany');
     });
 
-    Route::get('/fd', function () {
-        return view('fd');
-    });
-
     Route::get('/loan', function () {
         return view('loan');
     });
 
-    Route::get('/creditcards', function () {
-        return view('creditcards');
-    });
 
-  
-    
-    
+ 
     Route::get('/sbi', function () {
         return view('sbi');
     });
