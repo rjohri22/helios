@@ -167,65 +167,8 @@ box-shadow:2px 2px 2px 2px black;
                     </div>
                 </div>
 
-                 <div class="col-lg-3">
-                    <center> <h5 class="mt-3 text-warning">Register your account</h5></center>
-                    <form class="mx-5" style="margin-top:20px">
-                    <div class="mb-3 mt-3">
-                            <!--<label for="exampleInputEmail1"><font color="white">Name</font></label>-->
-                            <!--<input type="text" class="form-control" style="background-color:#203A43;border:1px solid orange;color:white;width:100%"  id="exampleInputEmail1"-->
-                            <!--    aria-describedby="emailHelp" placeholder="Enter name">-->
-                           
-                            <div class="input-container ">
-    <i class="fa fa-user icon"></i>
-    <input class="input-field" type="text" placeholder="PAN" style="width:100%" name="usrnm">
-  </div>
-
-                        </div>
-                        <div class="mb-3 mt-3">
-                            <!--<label for="exampleInputEmail1"><font color="white">Email address</font></label>-->
-                            <!--<input type="email" class="form-control" style="background-color:#203A43;border:1px solid orange;color:white" id="exampleInputEmail1"-->
-                            <!--    aria-describedby="emailHelp" placeholder="Enter email">-->
-                     <div class="input-container">
-    <i class="fa fa-envelope icon"></i>
-    <input class="input-field" type="text" placeholder="Email" style="width:100%" name="email">
-  </div>        
-                        </div>
-                         <div class="mb-3 mt-3">
-                            <!--<label for="exampleInputPassword1"><font color="white">Mobile number</font></label>-->
-                            <!--<input type="number" class="form-control" style="background-color:#203A43;border:1px solid orange;color:white" id="exampleInputPassword1"-->
-                            <!--    placeholder="enter number">-->
-                            <div class="input-container">
-    <i class="fa fa-key icon"></i>
-    <input class="input-field" type="password" placeholder="Password" style="width:100%" name="pwd">
-  </div>
-                        </div>
-                          <div class="mb-3 mt-3">
-                            <!--<label for="exampleInputPassword1"><font color="white">Mobile number</font></label>-->
-                            <!--<input type="number" class="form-control" style="background-color:#203A43;border:1px solid orange;color:white" id="exampleInputPassword1"-->
-                            <!--    placeholder="enter number">-->
-                            <div class="input-container">
-    <i class="fa fa-phone icon"></i>
-    <input class="input-field" type="number" placeholder="Mobile" style="width:100%" name="num">
-  </div>
-                        </div>
-                        <div class="mb-3 mt-3">
-                            <div class="input-container">
-    <i class="fa fa-lock icon"></i>
-    <input class="input-field" type="number" placeholder="Otp" name="otp" style="width:100%">
-  </div>
-                        </div>
-
-                      
-  <!--                      <div class="mb-3 mt-3">-->
-  <!--                          <div class="input-container">-->
-  <!--  <i class="fa fa-lock icon"></i>-->
-  <!--  <input class="input-field" type="number" placeholder="Otp" name="otp" style="width:100%">-->
-  <!--</div>-->
-  <!--                      </div>-->
-                       
-                        <button type="submit" class="btn btn-primary">Submit</button>
-                    </form>
-                </div> 
+   
+                @include('register_form') 
                 </div>
         
             </div>

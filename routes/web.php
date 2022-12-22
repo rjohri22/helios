@@ -83,6 +83,11 @@ Route::get('afterregister/thank-you',[AuthController::class, 'afterregister']);
     Route::get('/fd', function () {
         return view('fd');
     });
+    
+    Route::get('/preipo', function () {
+        return view('preipo');
+    });
+
 
 // =====================================================================================
 Route::middleware(['auth','verify'])->group(function () {
@@ -103,10 +108,6 @@ Route::middleware(['auth','verify'])->group(function () {
     Route::get('/about', function () {
         return view('about');
     });
-
-    // Route::get('/preipo', function () {
-    //     return view('preipo');
-    // });
 
 
     Route::get('/sipcalculator', function () {
