@@ -46,7 +46,7 @@
 
 </style>
 
-
+<body id="body">
 <div class="root responsivegrid">
 
     <div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
@@ -178,16 +178,16 @@
                                                                 data-dropdown="dropdown" style="color:blue;margin-left:-0px;font-size:10px;">Login</a>
                                                     <!-- </button> -->
                                                             <div class="custom-dropdown-container dropdown-open-menu"
-                                                                id="">
+                                                            id="loginformclose">
                                                                 <div class="notification-bell-box" id="">
                                                                     <div class="notification-bell-top">
-                                                                        <h6 style="color: white;">Login Form</h6>
+                                                                        <h6 style="color: white;">Login Form &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<button style="color:white" data-dropdown="dropdown">Close</button></h6>
                                                                         <a href="javascript:void(0)"
                                                                             class="bell-dropdown-close"
                                                                             data-dropdownclose="close">
                                                                             <span class="icon-close"></span></a>
                                                                     </div>
-                                                                    <div class="notification-bell-bottom">
+                                                                    <div class="notification-bell-bottom" >
                                                                         <div class="site-bell-dropdown">
                                                                             <ul
                                                                                 class="notification-bell-list notification-bell-icons">
@@ -897,3 +897,5 @@
     </div>
     {{-- after login model end --}}
 </div>
+
+<body>
