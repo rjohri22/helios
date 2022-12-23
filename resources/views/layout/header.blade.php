@@ -21,6 +21,10 @@
     <link rel=mask-icon href=/safari-pinned-tab.svg?x26145 color=#5bbad5>
     <link rel=alternate type=application/rss+xml title="EMI Calculator Feed" href=https://emicalculator.net/feed />
     <script async src=//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?x26145></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script>
         (adsbygoogle = window.adsbygoogle || []).push({
             google_ad_client: "ca-pub-6020664305604651",
@@ -339,7 +343,7 @@
                                                     </li>
                                                     <li class="d-xs-none call-desktop">
                                                         <div class="custom-dropdown">
-                                                            <select>
+                                                            <select class="form-control">
                                                                 <option>Hindi</option>
                                                                 <option>English</option>
                                                             </select>
@@ -378,7 +382,8 @@
 
                                                 <li class="d-xs-none call-desktop">
                                                     <div class="custom-dropdown">
-                                                        <select>
+                                                        <select class="form-control btn btn-light" style="font-size:10px">
+                                                        <option>^Lang</option>
                                                             <option>Hindi</option>
                                                             <option>English</option>
                                                         </select>
