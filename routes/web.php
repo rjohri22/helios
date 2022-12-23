@@ -69,6 +69,11 @@ Route::get('afterregister/thank-you',[AuthController::class, 'afterregister']);
     Route::get('/pms', function () {
         return view('pms');
     });
+    
+    Route::get('/insurance', function () {
+        return view('insurance');
+    });
+    
  Route::get('/family',function(){
         return view('family');
     })->name('family');
@@ -87,6 +92,11 @@ Route::get('afterregister/thank-you',[AuthController::class, 'afterregister']);
     Route::get('/preipo', function () {
         return view('preipo');
     });
+
+    Route::get('/loan', function () {
+        return view('loan');
+    });
+
 
 
 // =====================================================================================
@@ -133,9 +143,6 @@ Route::middleware(['auth','verify'])->group(function () {
         return view('searchcompany');
     });
 
-    Route::get('/loan', function () {
-        return view('loan');
-    });
 
 
  
@@ -152,9 +159,5 @@ Route::middleware(['auth','verify'])->group(function () {
         return view('standardcharted');
     });
 
-    Route::get('/insurance', function () {
-        return view('insurance');
-    });
-    
     
 });

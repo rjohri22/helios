@@ -2,7 +2,8 @@
                     <center>
                         <h5 class="mt-3 text-warning">Register your account</h5>
                     </center>
-                    <form class="mx-5" id="authform" method="POST" style="margin-top:20px">
+                    <!-- id="authform" -->
+                    <form class="mx-5"  action="{{url('/')}}/registersubmit"  method="POST" style="margin-top:20px">
                         @csrf
                         <!-- <form class="mx-5" style="margin-top:20px"> -->
                         <div class="mb-3 mt-3">
@@ -69,7 +70,7 @@
                         <!--</div>-->
                         <!--                      </div>-->
 
-                        <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
-                        <button type="button" id="verifyotp" class="btn btn-primary">Submit</button>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                        <!-- <button type="button" id="verifyotp" class="btn btn-primary">Submit</button> -->
                     </form>
                 </div>

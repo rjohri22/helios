@@ -17,25 +17,30 @@ class MutualController extends Controller
     public function registersubmit(Request $request)
     {
         $otp = rand(100000, 999999);
-        $mail_details = [
-            'to' => $request->email,
-            'subject' => 'Testing Application OTP',
-            'body' => 'Your OTP is : ' . $otp,
-            'header' => "From: webmaster@example.com",
-        ];
+        // $mail_details = [
+        //     'to' => $request->email,
+        //     'subject' => 'Testing Application OTP',
+        //     'body' => 'Your OTP is : ' . $otp,
+        //     'header' => "From: webmaster@example.com",
+        // ];
+
         $data = [
             'name' => $request->name,
             'email' => $request->email,
             'password' => Hash::make($request->password),
-            'mobile' => $request->phone,
-            'otp' => $otp,
+            'mob_num' => $request->phone, 
+            'mob_verified'=>0
         ];
-
+ 
         // Mail::to($request->email)->send(new NotifyMail($mail_details));
         if ($user = User::create($data)) {
             Auth::login($user);
-            return response()->json(["message" => "success"]);
-        } else {return response()->json(["message" => "error"]);}
+            // response()->json(["message" => "success"])  
+            dd('user created successfully'); 
+            return  redirect()->back()->with('message','Registration Successfull');
+        } else {
+            return  redirect()->back()->with('error_message','Error Occured'); 
+        }
     }
 
     public function loginsubmit(Request $request)
