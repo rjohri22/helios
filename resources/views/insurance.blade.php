@@ -377,6 +377,26 @@ Group Health <br>Insurance</p>
     </div>
 </section>
 <section>
+    <div class="row">
+        <div class="col-md-6 col-lg-6 col-sm-6">
+            <center>
+                <img src="https://www.anblicks.com/wp-content/uploads/2022/08/direct-to-customer.png" style="width:400px;height:400px"/>
+            </center>
+       
+        </div>
+        <div class="col-md-6 col-lg-6 col-sm-6">
+        <p class="mt-5">Insurance is a means of protection from financial loss in which, in exchange for a fee, a party agrees to compensate another party in the event of a certain loss, damage, or injury. </p>
+        <p class="mt-5">Insurance is a means of protection from financial loss in which, in exchange for a fee, a party agrees to compensate another party in the event of a certain loss, damage, or injury. Insurance is a means of protection from financial loss in which, in exchange for a fee, a party agrees to compensate another party in the event of a certain loss, damage, or injury. </p>
+        <a href="https://pc.maxlifeinsurance.com/login">
+        <button class="btn btn-warning text-white">Calculate Primium<br>
+        
+        </button>
+</a>
+        <p style="font-size:14px">UserId 32115A Password Max@1234</p>
+        </div>
+    </div>
+</section>
+<section>
     <div class="jumbotron">
         <div class="row">
             <div class="col-lg-3">

@@ -511,6 +511,7 @@ box-shadow:2px 2px 2px 2px black;
                                                         <th>MULTIPLE QTM</th>
                                                         <th>Available Qty (In Lacs)</th>
                                                         <th>Face Value</th>
+                                                        <th style="width:120px">Action</th>
                                                     </tr>
                                                     <tr>
                                                         <th>9.25% TATA CAPITAL FINANCIAL SERVICES 2025</th>
@@ -526,6 +527,8 @@ box-shadow:2px 2px 2px 2px black;
                                                         <th>MULTIPLE OF 10 LACS</th>
                                                         <th>UP TO 30 LACS</th>
                                                         <th>1000000</th>
+                                                        <td><button class="btn" style="color:white;background-color:#3CB371">Invest
+                                                Now<button></td>
                                                     </tr>
                                                     <tr>
                                                         <th>9.30% HDFC CREDILA FINANCIAL SERVICES PVT LTD-2025</th>
@@ -541,6 +544,8 @@ box-shadow:2px 2px 2px 2px black;
                                                         <th>10 LACS ONLY </th>
                                                         <th>10 LACS ONLY </th>
                                                         <th>1000000</th>
+                                                        <td><button class="btn" style="color:white;background-color:#3CB371">Invest
+                                                Now<button></td>
                                                     </tr>
                                                     <tr>
                                                         <th>9.35% ADANI PORTS AND SPECIAL ECONOMIC ZONE LIMITED-2026</th>
@@ -556,6 +561,8 @@ box-shadow:2px 2px 2px 2px black;
                                                         <th>MULTIPLE OF 10 LACS</th>
                                                         <th>UP TO 50 LACS </th>
                                                         <th>1000000</th>
+                                                        <td><button class="btn" style="color:white;background-color:#3CB371">Invest
+                                                Now<button></td>
                                                     </tr>
                                                     <tr>
                                                         <th>9.00% SHRIRAM TRANSPORT FINANCE COMPANY LIMITED-2028</th>
@@ -571,6 +578,8 @@ box-shadow:2px 2px 2px 2px black;
                                                         <th>MULTIPLE OF 10 LACS</th>
                                                         <th>UP TO 1.6 CR</th>
                                                         <th>1000000</th>
+                                                        <td><button class="btn" style="color:white;background-color:#3CB371">Invest
+                                                Now<button></td>
                                                     </tr>
 </table>                             
         </div>

@@ -327,6 +327,24 @@ box-shadow:2px 2px 2px 2px black;
             </div>
         </div>
     </section>
+    <section>
+        <div class="row mt-5 mb-5">
+            <div class="col-md-6 col-lg-6">
+                <center>
+                <img src="https://www.ruloans.com/assets/img/FD/ICICI-FD.PNG" style="height:400px;width:400px"/>
+</center>
+            </div>
+            <div class="col-md-6 col-lg-6">
+                <p>A fixed deposit (FD) is a financial instrument provided by banks or NBFCs which provides investors a higher rate of interest than a regular savings account, until the given maturity date. It may or may not require the creation of a separate account. It is known as a term deposit or time deposit in Canada, Australia, New Zealand, fixed deposit in India and the United States, and as a bond in the United Kingdom and for a fixed deposit is that the money cannot be withdrawn from the FD as compared to a recurring deposit or a demand deposit before maturity. Some banks may offer additional services to FD holders such as loans against FD certificates at competitive interest rates. </p>
+                <p>Our online FD account opening process is quick and convenient. If you prefer opening a Fixed Deposit account in person, you can contact our relationship manager or simply walk into your nearest RBL Bank branch to open an FD account.
+</p>
+                <button class="btn btn-warning text-white">Fixed Deposit</button>
+                <p class="mt-3"> A Fixed Deposit is an investment tool that gives you assured returns over a pre-decided investment term</p>
+            </div>
+            
+
+        </div>
+    </section>
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
