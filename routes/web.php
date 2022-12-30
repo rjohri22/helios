@@ -96,7 +96,17 @@ Route::get('afterregister/thank-you',[AuthController::class, 'afterregister']);
     Route::get('/loan', function () {
         return view('loan');
     });
+    Route::get('/sipcalculator', function () {
+        return view('sipcalculator');
+    });
 
+    Route::get('/businessloan', function () {
+        return view('businessloan');
+    });
+
+    Route::get('/carloan', function () {
+        return view('carloan');
+    });
 
 
 // =====================================================================================
@@ -120,10 +130,7 @@ Route::middleware(['auth','verify'])->group(function () {
     });
 
 
-    Route::get('/sipcalculator', function () {
-        return view('sipcalculator');
-    });
-
+   
 
     
 
@@ -131,13 +138,6 @@ Route::middleware(['auth','verify'])->group(function () {
         return view('homeloan');
     });
 
-    Route::get('/businessloan', function () {
-        return view('businessloan');
-    });
-
-    Route::get('/carloan', function () {
-        return view('carloan');
-    });
 
     Route::get('/searchCompany', function () {
         return view('searchcompany');
