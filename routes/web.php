@@ -100,8 +100,8 @@ Route::get('afterregister/thank-you',[AuthController::class, 'afterregister']);
         return view('sipcalculator');
     });
 
-    Route::get('/businessloan', function () {
-        return view('businessloan');
+    Route::get('/swp', function () {
+        return view('swp');
     });
 
     Route::get('/carloan', function () {

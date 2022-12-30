@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SWP Calculator</title>
-    <script src="js/swpcal.js"></script>
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
@@ -34,7 +34,7 @@
             <div class="row">
                 <div class="col-md-8">
                     <h5 style="opacity: 0.5;">Are you ready for your investment</h5>
-                    <p style="opacity: 0.5;">Open an account with Kuvera.in today and start investing</p>
+            
                 </div>
                 <div class="col-md-2">
                     <img src="images/SWP_Icon.svg" alt="">
@@ -46,7 +46,7 @@
         </div>
     </section>
     <hr>
-    <section>
+    <section class="mt-3 mb-5">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -192,12 +192,14 @@
                         </div>
 
                     </div>
-                   <button class="btn btn-primary mt-5">Back Now</button>
+                   <a href="/"><button class="btn btn-primary mt-5">Back Now</button></a>
                 </div>
             </div>
         </div>
     </section>
-    <script src="swpcal.js"></script>
-</body>
+    <script src="js/swpcal.js"></script>
 
-</html>
+
+
+@include('layout.mutualfundfooter')
+@include('layout.footer')

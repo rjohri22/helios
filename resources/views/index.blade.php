@@ -689,7 +689,7 @@
                     </div>
                     <div class="col-md-4">
                         <h5>Systematic Withdrawal Plan(SWP)</h5>
-                        <a href="/businessloan">
+                        <a href="/swp">
                             <img src="https://www.kotaksecurities.com/investment-products/mutual-fund/top-mutualfund/img/mutualFund.svg"
                                 style="height:300px;width:300px" />
                         </a>
