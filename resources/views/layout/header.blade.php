@@ -395,9 +395,9 @@
                             <div class="second-bar">
                                 <div class="container">
                                     <div class="second-inner">
-                                        <div class="nav-logo">
+                                        <div class="nav-logo" style="margin-top:-40px">
                                             <a href="#">
-                                                <img src="images/logochange.jpeg" alt="Tata Capital Logo"
+                                                <img src="images/logoupd.png" alt="metrofintec"
                                                     class="logo-desktop">
                                             </a>
                                         </div>

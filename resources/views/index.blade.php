@@ -871,7 +871,7 @@ Modern Investor<img src="https://cdn-icons-png.flaticon.com/512/3789/3789988.png
     </div>
     <!-- End Blog -->
 
-
+<!-- 
     <div class="container">
         <center>
             <h3>Our Team</h3>
@@ -921,7 +921,7 @@ Modern Investor<img src="https://cdn-icons-png.flaticon.com/512/3789/3789988.png
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
 
 
