@@ -36,7 +36,99 @@ box-shadow:2px 2px 2px 2px black;
   width: 100%;
   margin-bottom: 15px;
 }
+
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.reveal1{
+  position: relative;
+  transform: translateX(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal1.active{
+  transform: translateX(0);
+  opacity: 1;
+}
+
+
+.reveal2{
+  position: relative;
+  transform: translateX(-150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal2.active{
+  transform: translateX(0);
+  opacity: 1;
+}
 </style>
+<script>
+        function reveal() {
+  var reveals = document.querySelectorAll(".reveal");
+
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals[i].getBoundingClientRect().top;
+    var elementVisible = 150;
+
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("active");
+    } else {
+      reveals[i].classList.remove("active");
+    }
+  }
+}
+
+window.addEventListener("scroll", reveal);
+function reveal1() {
+  var reveals1 = document.querySelectorAll(".reveal1");
+
+  for (var i = 0; i < reveals1.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals1[i].getBoundingClientRect().top;
+    var elementVisible = 150;
+
+    if (elementTop < windowHeight - elementVisible) {
+      reveals1[i].classList.add("active");
+    } else {
+      reveals1[i].classList.remove("active");
+    }
+  }
+}
+
+window.addEventListener("scroll", reveal1);
+
+function reveal2() {
+  var reveals2 = document.querySelectorAll(".reveal2");
+
+  for (var i = 0; i < reveals2.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals2[i].getBoundingClientRect().top;
+    var elementVisible = 150;
+
+    if (elementTop < windowHeight - elementVisible) {
+      reveals2[i].classList.add("active");
+    } else {
+      reveals2[i].classList.remove("active");
+    }
+  }
+}
+
+window.addEventListener("scroll", reveal2);
+
+        </script>
 <body class="page-opt-nocalc page basicpage">
     <!--<div class="home-page-layout cm-page-container">-->
     <!--    <div class="responsivegrid aem-GridColumn aem-GridColumn--default--12" style="background-color:white">-->
@@ -331,71 +423,53 @@ box-shadow:2px 2px 2px 2px black;
         <div class="row mt-5 mb-5">
             <div class="col-md-6 col-lg-6">
                 <center>
-                <img src="https://www.ruloans.com/assets/img/FD/ICICI-FD.PNG" style="height:400px;width:400px"/>
+                <img src="https://www.ruloans.com/assets/img/FD/ICICI-FD.PNG" class="reveal1" style="height:300px;width:300px"/>
 </center>
             </div>
-            <div class="col-md-6 col-lg-6">
-                <p>A fixed deposit (FD) is a financial instrument provided by banks or NBFCs which provides investors a higher rate of interest than a regular savings account, until the given maturity date. It may or may not require the creation of a separate account. It is known as a term deposit or time deposit in Canada, Australia, New Zealand, fixed deposit in India and the United States, and as a bond in the United Kingdom and for a fixed deposit is that the money cannot be withdrawn from the FD as compared to a recurring deposit or a demand deposit before maturity. Some banks may offer additional services to FD holders such as loans against FD certificates at competitive interest rates. </p>
-                <p>Our online FD account opening process is quick and convenient. If you prefer opening a Fixed Deposit account in person, you can contact our relationship manager or simply walk into your nearest RBL Bank branch to open an FD account.
+            <div class="col-md-6 col-lg-6 reveal">
+                <p>A fixed deposit, popularly known as an FD, is an investment system largely offered
+by banks, as well as non-banking financial companies (NBFC) to support their
+customers for saving money. It is a very beneficial system in fixed deposits, wherein
+you can invest a sizeable amount of money at a pre-fixed rate of interest for a fixed
+period. </p>
+                <p>In a Fixed Deposit, a customer has to put an amount according to the minimum
+and maximum limit of his bank for a fixed tenure at an agreed rate of interest. At
+the end of the tenure, the customer receives the amount he has invested plus
+compound interest. FDs are also called term deposits. 
 </p>
                 <button class="btn btn-warning text-white">Fixed Deposit</button>
-                <p class="mt-3"> A Fixed Deposit is an investment tool that gives you assured returns over a pre-decided investment term</p>
+             
             </div>
             
 
         </div>
     </section>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-            <div class="card">
-                <div class="card-body">
-                    <h3>Features and benefits</h3>
-                    <div class="row">
-                    <div class="col-lg-6">
-                        <h4>Up to 0.25% p.a. higher interest rate for senior citizens</h4>
-                        <p>Manage your post -retriement expenses with an additional rate benefits on your deposit.</p>
-                        <h4>Deposits Starting at Rs.15,000</h4>
-                        <p>Start investing with a small amount and grow your savings with our fixed deposits.</p>
-                    </div>
-                    <div class="col-lg-6">
-                        <h4>Flexible tenors up to 60 months</h4>
-                        <p>Choose tenors ranging from 12 to 60 months,as per your convenience</p>
-                        <h4>Get Secured returns up to 7.60% p.a.*</h4>
-                        <p>Grow your savings with the best returns on your deposit.</p>
-                    </div>
-                    </div>
-                </div>
-            </div>
-</div>
-        </div>
+   <section style="background-image:url('https://cdn.pixabay.com/photo/2021/12/05/23/04/personality-6848950_960_720.png');background-repeat:no-repeat;background-size:cover">
+    <div class="container-fluid" style="background-color:#3CB371;opacity:0.7">
+        <br>
+        <h4 class="mt-3" style="color:white;opacity:1">BENEFITS OF FIXED DEPOSITS</h4>
+        <p style="color:white;font-family:Cursive;font-size:18px" class="reveal2">The main advantage of a fixed deposit is that it offers guaranteed returns. The rate
+of interest offered to a customer when he opens a FD remains fixed throughout the
+tenure. Despite changes in the market scenario the interest rates pre-decided for FD
+remain the same. So, a customer need not worry about the upheavals in the economic
+arena.</p>
+<p style="color:white;font-family:Cursive;font-size:18px" class="reveal2">A customer can easily open an FD in the bank in which he has a savings account.
+After opening a Fixed deposit, a client doesn’t have to worry about it till it matures. He
+or she can also give maturity instructions for automatic renewal or get the maturity
+amount credited directly to his account. If a customer selects a fixed deposit plan with
+a reinvestment option, you will benefit from compound interest.
+</p>
+<p style="color:white;font-family:Cursive;font-size:18px" class="reveal2">Normally people who want to have a regular income from their savings go for fixed
+deposits so that the interest which is deposited in their account gives them comfort
+and security</p>
+<br>
     </div>
+   
+   </section>
 
 
-    <div class="container mt-5">
-        <div class="row">
-            <div class="col-lg-12">
-            <div class="card">
-                <div class="card-body">
-                    <h3>Fixed deposit eligility criteria</h3>
-                    <div class="row">
-                    <div class="col-lg-6">
-                        <h4>Non-resident Indians and others</h4>
-                        <p>NRIs, overseas citizens of india,an persons of indian origin must be above 18 years of age and have an NRO account.</p>
-                        <h4>Resident Indian Citizens</h4>
-                        <p>Individuals must be above 18 years of age.For minors the FD can be booked by their guardians.</p>
-                    </div>
-                    <div class="col-lg-6">
-                        <h4>Non-individuals</h4>
-                        <p>Hindu undivided Families(HUF),sole proprietorship,partneship firms,group companies ,clubs,associations,societies,and family trusts can invest.</p>
-                      
-                    </div>
-                    </div>
-                </div>
-            </div>
-</div>
-        </div>
-    </div>
+
+
    <!--Table for fixed deposit-->
    <div class="section-padding lw-tab-section p-relative">
         <div class="container">
@@ -657,8 +731,8 @@ box-shadow:2px 2px 2px 2px black;
             </div>
         </div>
     </div>
- 
- 
-    @include('layout.logofooter')  
- 
-    @include('layout.footer')
+</div>
+</div>
+@include('layout.logofooter')
+@include('layout.mutualfundfooter')
+@include('layout.footer')
