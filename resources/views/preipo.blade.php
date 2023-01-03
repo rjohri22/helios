@@ -39,8 +39,32 @@ table tr td
   width: 100%;
   margin-bottom: 15px;
 }
+.reveal2{
+  position: relative;
+  transform: translateX(-150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal2.active{
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.reveal{
+  position: relative;
+  transform: translateY(-150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+}
 
 </style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <!--
 start search company code    !-->
 <script>
@@ -50,6 +74,41 @@ start search company code    !-->
         window.localStorage.setItem('search',search);
         window.location='/searchCompany';
     }
+    function reveal2() {
+  var reveals2 = document.querySelectorAll(".reveal2");
+
+  for (var i = 0; i < reveals2.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals2[i].getBoundingClientRect().top;
+    var elementVisible = 150;
+
+    if (elementTop < windowHeight - elementVisible) {
+      reveals2[i].classList.add("active");
+    } else {
+      reveals2[i].classList.remove("active");
+    }
+  }
+}
+
+window.addEventListener("scroll", reveal2);
+
+function reveal() {
+  var reveals = document.querySelectorAll(".reveal");
+
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals[i].getBoundingClientRect().top;
+    var elementVisible = 150;
+
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("active");
+    } else {
+      reveals[i].classList.remove("active");
+    }
+  }
+}
+
+window.addEventListener("scroll", reveal);
 </script>
 <body class="page-opt-nocalc page basicpage">
     <div class="home-page-layout cm-page-container">
@@ -325,22 +384,90 @@ start search company code    !-->
         </div>
     </div>
     <!-- Header End -->
-   <div class="container">
-    <div class="row">
+<section style="background-image:url('https://c4.wallpaperflare.com/wallpaper/514/981/272/smoky-white-bw-black-wallpaper-preview.jpg');background-repeat:no-repeat;background-size:cover;margin-top:-26px" class="reveal2">
+  
+    <br>
+    <br>
+     <div class="container" >
+    <div class="row" style="background-color:#black;padding-top:5px;padding-bottom:5px">
         
-        <div class="col-lg-8">
-            <h4>What is Pre-IPO?</h4>
-            <p>As the name suggests before IPO and these include equity shares of a company that is not listed on BSE/NSE, these shares are traded over the counter (OTC), and they are often called OTC securities. These companies can be companies that are privately held, formerly public companies taken private in management buyouts, public companies which are not yet listed on a recognized stock exchange, etc.
+        <div class="col-lg-12">
+            <h3 style="margin-top:12px;color:white">What Is a Pre-IPO Placement?</h3>
+            <br>
+            <p style="color:white;font-family:Cursive;font-size:18px">A pre-initial public offering (IPO) placement is a private sale of large quantities of
+shares before a stock is listed on a public exchange platform. The buyers are usually
+private equity firms, hedge funds, and other organizations willing to buy large stakes
+in the company before it is listed on an exchange platform.
 </p>
-<p>These companies often enjoy a healthy growth rate and have industry-leading future prospects. These unlisted shares, especially at the Pre-IPO stage, provide an excellent investment opportunity mainly focusing on long-term wealth creation. The returns can potentially beat returns by listed equities.
+<p style="color:white;font-family:Cursive;font-size:18px">Due to the amount and quantity of the investments being made and the risks involved,
+the buyers in a pre-IPO placement usually get a pre-decided discount from the price
+stated in the unlisted IPO. A simple example is that of a real estate company which
+sells its commercial or residential units during the pre-launch of the project. They offer
+a sizeable discount to the buyers if they purchase property before construction.
 </p>
+<br>
         </div>
-        <div class="col-lg-4">
+        <!-- <div class="col-lg-4">
             <img src="https://static.wixstatic.com/media/00a0e0_b17cd951149d43f99a0bd7c329b4ec92~mv2.gif" style="height:300px;width:300px;"/>
-        </div>
+        </div> -->
     </div>
    </div>
-       <!-- Table Format!-->
+   <br>
+    <br>
+</section>
+
+<section>
+    <div class="container">
+    <h3 class="mt-5 text-center reveal">THE CORE OF A PREIPO</h3>
+        <div class="row mt-5">
+          
+            <div class="col-lg-4 reveal">
+                <div class="text-center">
+                    <img src="https://icon-library.com/images/hospitality-icon/hospitality-icon-5.jpg" style="height:100px;width:100px" alt="">
+                    <p>A pre-IPO placement is a sale of large quantities of stock in a company before
+it is listed on a public exchange</p>
+                </div>
+            </div>
+            <div class="col-lg-4 reveal">
+                <div class="text-center">
+                    <img src="https://cdn-icons-png.flaticon.com/512/4660/4660757.png"  style="height:100px;width:100px"  alt="">
+                    <p>The buyer gets the shares at a discount from the IPO price.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 reveal">
+            <div class="text-center">
+                    <img src="https://cdn.pixabay.com/photo/2012/04/24/12/29/no-symbol-39767_1280.png"  style="height:100px;width:100px"  alt="">
+                    <p>This is a strategy for the company to raise funds and mitigate or lower the risk
+in case the IPO is not as successful as it was supposed to be.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    
+<section style="background-color:#38c179">
+    <div class="container mt-5 mb-5">
+        <h2 style="color:white;font-family:cursive;font-family:cursive" class="pt-5">-Ready To Invest Now</h2>
+        <p style="color:white;font-size:15px" class="reveal2"><i class="fa fa-hand-o-right" aria-hidden="true" style="font-size:15px"></i> &nbsp&nbspFrom the point of view of a start-up or a relatively new company, a pre-IPO placement
+is a strategy to raise funds before going public. It also is a way to reduce the risk that
+the IPO price will grow as per their expectations. Moreover, and frequently, investors
+in these private sales are strategic focused investors and help the company with
+official matters before going for IPO.
+From the buyer's point of view, the amount per share may be lower from the expected
+IPO price, but there is no surety that the price per share will be higher when IPO
+occurs. In fact, the buyer makes a deal without a prospectus and with no guarantee
+that the public listing will occur. The lower price is reimbursement for this uncertainty.</p>
+<p style="color:white;font-family:cursive;font-size:15px" class="reveal2"><i class="fa fa-hand-o-right" aria-hidden="true" style="font-size:15px"></i> &nbsp&nbspVery few individual investors take part in pre-IPO placements. They are generally
+affluent financial experts with an in-depth knowledge of the financial markets.
+</p>
+<p style="color:white;font-family:cursive;font-size:15px" class="reveal2"><i class="fa fa-hand-o-right" aria-hidden="true" style="font-size:15px"></i> &nbsp&nbspKeeping in mind their safety the company, on the other hand does not want these
+private buyers to immediately sell all their shares if their stock grows once it opens
+on an exchange. To prevent this, a fixed tenure is mentioned in the placement,
+preventing the buyer from selling shares in a short-term period.</p>
+<button class="btn btn-warning text-white mb-5 reveal2">Invest Now</button>
+    </div>
+</section>
+<!-- Table Format!-->
     <div class=" mx-auto table-shrink" style="width:80%;margin-top:20px;">
    
         <div class="row mt-5">
