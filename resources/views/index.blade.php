@@ -29,8 +29,39 @@
         width: 100%;
         margin-bottom: 15px;
     }
-</style>
+    
+.reveal2{
+  position: relative;
+  transform: translateX(-150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
 
+.reveal2.active{
+  transform: translateX(0);
+  opacity: 1;
+}
+</style>
+<script>
+    function reveal2() {
+  var reveals2 = document.querySelectorAll(".reveal2");
+
+  for (var i = 0; i < reveals2.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals2[i].getBoundingClientRect().top;
+    var elementVisible = 150;
+
+    if (elementTop < windowHeight - elementVisible) {
+      reveals2[i].classList.add("active");
+    } else {
+      reveals2[i].classList.remove("active");
+    }
+  }
+}
+
+window.addEventListener("scroll", reveal2);
+
+    </script>
 <body class="page-opt-nocalc page basicpage">
 
     <div class="home-page-layout cm-page-container">
@@ -716,21 +747,21 @@
                 <div class="col-lg-12 align-self-center">
                     <div class="about-left-side mb-md-40 ">
                         <center>
-                            <h3 class="text-custom-black fw-700">WHY HELIOSFINTECH?</h3>
+                            <h3 class="text-custom-white fw-700">WHY HELIOSFINTECH?</h3>
                         </center>
-                        <p class='text-light'>The word “Helios” means God of the Sun driving his chariot across the sky. Similarly,
+                        <p style="color:white;font-family:Cursive;font-size:18px" class="reveal2">The word “Helios” means God of the Sun driving his chariot across the sky. Similarly,
 Heliosfintech is the dawn of the new Sun in the world of financial products. It has been
 launched to bring about a ray of hope to the millions of investors looking for multiplying
 their investments but with negligible risk.
-With decades of experience the founders of the organization have designed multiple
+                        </p>
+<p style="color:white;font-family:Cursive;font-size:18px" class="reveal2">With decades of experience the founders of the organization have designed multiple
 investment portfolios for individuals, corporates and investors. Heliosfintech is their
 hand holder and guide for effectively investing in financial aid opportunities which earn
-them surplus returns. 
-                        </p>
-<p class='text-light'>Due to the expertise and personal involvement of the company they have very skilfully
+them surplus returns.</p>
+<p style="color:white;font-family:Cursive;font-size:18px" class="reveal2">Due to the expertise and personal involvement of the company they have very skilfully
 covered all the necessary detailed information and documentation required to attain
-the aforementioned loans, traditional investment, insurance and more.
-“Heliosfintech” is synonymous with trust, loyalty and security of the investments of their
+the aforementioned loans, traditional investment, insurance and more. </p>
+<p style="color:white;font-family:Cursive;font-size:18px" class="reveal2">“Heliosfintech” is synonymous with trust, loyalty and security of the investments of their
 esteemed investors. So, whenever you wish to invest your hard-earned money and
 explore the various options the first and foremost name in your mind should be
 Heliosfintech. </p>
