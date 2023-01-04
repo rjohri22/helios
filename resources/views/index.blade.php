@@ -1,4 +1,5 @@
 @include('layout.header')
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
     .cardshow {
         box-shadow: 10px 10px 10px 10px orange;
@@ -41,8 +42,49 @@
   transform: translateX(0);
   opacity: 1;
 }
+
+.reveal21{
+  position: relative;
+  transform: translateX(-150px) scale(0);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal21.active{
+  transform: translateX(0) scale(1);
+  opacity: 1;
+}
+
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+}
 </style>
 <script>
+      function reveal() {
+  var reveals = document.querySelectorAll(".reveal");
+
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals[i].getBoundingClientRect().top;
+    var elementVisible = 150;
+
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("active");
+    } else {
+      reveals[i].classList.remove("active");
+    }
+  }
+}
+
+window.addEventListener("scroll", reveal);
     function reveal2() {
   var reveals2 = document.querySelectorAll(".reveal2");
 
@@ -60,6 +102,24 @@
 }
 
 window.addEventListener("scroll", reveal2);
+
+function reveal21() {
+  var reveals21 = document.querySelectorAll(".reveal21");
+
+  for (var i = 0; i < reveals21.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals21[i].getBoundingClientRect().top;
+    var elementVisible = 150;
+
+    if (elementTop < windowHeight - elementVisible) {
+      reveals21[i].classList.add("active");
+    } else {
+      reveals21[i].classList.remove("active");
+    }
+  }
+}
+
+window.addEventListener("scroll", reveal21);
 
     </script>
 <body class="page-opt-nocalc page basicpage">
@@ -711,21 +771,21 @@ window.addEventListener("scroll", reveal2);
                 <h3 class="text-custom-black fw-700">
                     Tools and Calculators</h3>
                 <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-md-4 reveal">
                         <h5>Systematic Investment Plan(SIP)</h5>
                         <a href="/sipcalculator">
                             <img src="https://mf.nipponindiaim.com/LearnAndInvest/calculators/assets/images/sip-an-inc.svg"
                                 style="height:300px;width:300px" />
                         </a>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4 reveal">
                         <h5>Systematic Withdrawal Plan(SWP)</h5>
                         <a href="/swp">
                             <img src="https://www.kotaksecurities.com/investment-products/mutual-fund/top-mutualfund/img/mutualFund.svg"
                                 style="height:300px;width:300px" />
                         </a>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4 reveal">
                         <h5>One Time investment</h5>
                         <a href="/carloan">
                             <img src="https://addepar.com/assets/img/clip-financial-report.png" class="mt-5"
@@ -740,219 +800,138 @@ window.addEventListener("scroll", reveal2);
     <!-- End section Process -->
     <!-- Start why choose us -->
 
-    <section class="section-padding about-us-sec bg-warning p-relative">
+    <section class="section-padding about-us-sec p-relative">
 
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12 align-self-center">
-                    <div class="about-left-side mb-md-40 ">
-                        <center>
-                            <h3 class="text-custom-white fw-700">WHY HELIOSFINTECH?</h3>
+        <center>
+                            <h3 class="text-custom fw-700">WHY HELIOSFINTECH?</h3>
                         </center>
-                        <p style="color:white;font-family:Cursive;font-size:18px" class="reveal2">The word “Helios” means God of the Sun driving his chariot across the sky. Similarly,
+            <div class="row">
+                <div class="col-lg-6">
+                <p style="font-family:Cursive;font-size:18px" class="reveal2">The word “Helios” means God of the Sun driving his chariot across the sky. Similarly,
 Heliosfintech is the dawn of the new Sun in the world of financial products. It has been
 launched to bring about a ray of hope to the millions of investors looking for multiplying
 their investments but with negligible risk.
                         </p>
-<p style="color:white;font-family:Cursive;font-size:18px" class="reveal2">With decades of experience the founders of the organization have designed multiple
+                </div>
+                <div class="col-lg-6">
+                    <img src="https://cubelogic.com/wp-content/uploads/2018/11/Financial-Services.png" class="reveal21" style=height:300px;width:300px" alt="">
+                    </div>
+            </div>
+
+            <div class="row mt-5">
+                <div class="col-lg-6">
+                <img src="https://www.pnc.com/content/experience-fragments/pnc-com/en/conversation_starter/personal/consumer_checking/prospect/vw_400_offer/master/_jcr_content/root/containergrid_copy/embeddedGrid/image_copy_copy_copy.coreimg.png/1660834067839/vw-wallet-molecule-400.png" class="reveal2" style=height:300px;width:400px" alt="">
+                </div>
+                <div class="col-lg-6">
+                <p style="font-family:Cursive;font-size:18px" class="reveal21">With decades of experience the founders of the organization have designed multiple
 investment portfolios for individuals, corporates and investors. Heliosfintech is their
 hand holder and guide for effectively investing in financial aid opportunities which earn
-them surplus returns.</p>
-<p style="color:white;font-family:Cursive;font-size:18px" class="reveal2">Due to the expertise and personal involvement of the company they have very skilfully
+them surplus returns.
+                        </p>
+                    </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-lg-6">
+                <p style="font-family:Cursive;font-size:18px" class="reveal2">Due to the expertise and personal involvement of the company they have very skilfully
 covered all the necessary detailed information and documentation required to attain
 the aforementioned loans, traditional investment, insurance and more. </p>
-<p style="color:white;font-family:Cursive;font-size:18px" class="reveal2">“Heliosfintech” is synonymous with trust, loyalty and security of the investments of their
+                </div>
+                <div class="col-lg-6">
+                <img src="https://www.bonanzaonline.com/blog/wp-content/uploads/2022/07/Key-without-background.png" class="reveal21" style=height:300px;width:300px" alt="">
+                    </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-lg-6">
+                <img src="https://www.clicksandsales.com/img/Financial-Products.png" class="reveal21" style=height:300px;width:300px" alt="">
+                </div>
+                <div class="col-lg-6">
+              
+<p style="font-family:Cursive;font-size:18px" class="reveal2">“Heliosfintech” is synonymous with trust, loyalty and security of the investments of their
 esteemed investors. So, whenever you wish to invest your hard-earned money and
 explore the various options the first and foremost name in your mind should be
 Heliosfintech. </p>
-                        <div class="row">
-                            <div class="col-lg-3">
-                                <div class="card cardshow"
-                                    style="border-bottom-left-radius:40px;border-top-right-radius:20px;height:200px;">
-                                    <center>
-                                        <p>Certified Advisor
-                                        <p>
-                                            <img src="https://www.6degreesit.com/wp-content/uploads/2019/02/consultancy.png"
-                                                style="height:150px;width:150px" />
-                                    </center>
-                                </div>
-                            </div>
-                            <div class="col-lg-3">
-
-                                <div class="card cardshow"
-                                    style="border-bottom-left-radius:40px;border-top-right-radius:20px;height:200px;">
-                                    <center>
-                                        <p>100 % Digital Procecss
-                                        <p>
-                                            <img src="https://vuesol.com/wp-content/uploads/2018/07/digital-automation.png"
-                                                style="height:150px;width:150px" />
-                                    </center>
-                                </div>
-                            </div>
-                            <div class="col-lg-3">
-                                <div class="card cardshow"
-                                    style="border-bottom-left-radius:40px;border-top-right-radius:20px;height:200px;">
-                                    <center>
-                                        <p> Most Trusted Dgital Wealth Management Firm</p>
-                                        <img src="https://epistemictech.com/wp-content/uploads/2022/04/ETicaret-trendleri-1024x683.jpg"
-                                            style="height:100px;width:150px" />
-                                </div>
-                                </center>
-                            </div>
-                            <div class="col-lg-3">
-                                <div class="card cardshow"
-                                    style="border-bottom-left-radius:40px;border-top-right-radius:20px;height:200px;">
-                                    <center>
-                                        <p>Personalized Portfolio <br>Management</p>
-                                        <img src="https://cdni.iconscout.com/illustration/premium/thumb/content-writing-desk-4490946-3723238.png"
-                                            style="height:100px;width:150px" />
-                                    </center>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row mt-5">
-                            <div class="col-lg-3">
-                                <div class="card cardshow"
-                                    style="border-bottom-left-radius:40px;border-top-right-radius:20px;height:200px;">
-                                    <center>
-                                        <p>Best-In-Class Research
-                                        <p>
-                                            <img src="https://www.techinweb.com/wp-content/uploads/2020/06/111.png"
-                                                style="height:100px;width:150px" />
-                                    </center>
-                                </div>
-                            </div>
-                            <div class="col-lg-3">
-
-                                <div class="card cardshow"
-                                    style="border-bottom-left-radius:40px;border-top-right-radius:20px;height:200px;">
-                                    <center>
-                                        <p>One Platform For All Your
-                                            Financial Needs
-                                        <p>
-                                            <img src="https://www.pngkit.com/png/full/11-119966_business-png-images-service-sector-icon-png.png"
-                                                style="height:100px;width:150px" />
-                                    </center>
-                                </div>
-                            </div>
-                            <div class="col-lg-3">
-                                <div class="card cardshow"
-                                    style="border-bottom-left-radius:40px;border-top-right-radius:20px;height:200px;">
-                                    <center>
-                                        <p>Innovative Tools For The
-                                            Modern Investor</p>
-                                        <img src="https://cdn-icons-png.flaticon.com/512/993/993927.png"
-                                            style="height:100px;width:150px" />
-                                </div>
-                                </center>
-                            </div>
-
-                        </div>
-
-
-                        <!-- <div class="about-list">
-                            <ul>
-                                <li class="text-light-white fs-14"><i class="fa fa-check"></i> Certified Advisor <img src="https://cdn2.iconfinder.com/data/icons/digital-processing-16/100/storaging_digital_processing_color_technology_business_file-512.png" style="height:80px;width:80px"/></li>
-                                <li class="text-light-white fs-14"><i class="fa fa-check"></i> 100 % Digital Procecss <img src="https://cdn0.iconfinder.com/data/icons/researcher-business-1/100/psychology_researcher_color_digital_business_process_chemical-512.png" style="height:80px;width:80px"/>
-                                </li>
-                                <li class="text-light-white fs-14"><i class="fa fa-check"></i> Most Trusted Dgital Wealth Management Firm
-                                <img src="https://www.pinclipart.com/picdir/big/98-985785_wealth-management-insurance-clipart.png" style="height:80px;width:80px"/></li>
-                                <li class="text-light-white fs-14"><i class="fa fa-check"></i>Personalized Portfolio Management <img src="https://pasfa.de/wp-content/uploads/2022/03/Financial-Advisory.png" style="height:80px;width:80px"/>
-                                </li> <li class="text-light-white fs-14"><i class="fa fa-check"></i>Best-In-Class Research<img src="https://contensis.uwaterloo.ca/sites/open/courses/FEFOCHE/media/images/unit2-icon-Cropped-180x180.png" style="height:80px;width:80px"/>
-                                </li>
-                                </li> <li class="text-light-white fs-14"><i class="fa fa-check"></i>One Platform For All Your
-Financial Needs<img src="https://cdn-icons-png.flaticon.com/128/81/81752.png" style="height:80px;width:80px"/>
-                                </li>
-                                </li> <li class="text-light-white fs-14"><i class="fa fa-check"></i>Innovative Tools For The
-Modern Investor<img src="https://cdn-icons-png.flaticon.com/512/3789/3789988.png" style="height:80px;width:80px"/>
-                                </li>
-                            </ul>
-                        </div> -->
-
                     </div>
+            </div>
+
+
+</div>
+
+
+</div>
                 </div>
 
             </div>
         </div>
         <div class="bg-light-white-skew-2 bg-custom-black"></div>
     </section>
-    <!-- End why choose us -->
+<section>
+   <div class="container">
+   <div class="row mt-5 mb-5">
+        <div class="col-lg-6">
+        <li style="font-size:18px;font-family:cursive;line-height:2" class="reveal2"><i class="fa fa-spinner" aria-hidden="true" style="color:#3CB371"></i>&nbsp&nbspCertified Advisor</li>
+            <li style="font-size:18px;font-family:cursive;line-height:2" class="reveal2"><i class="fa fa-spinner" aria-hidden="true" style="color:#3CB371"></i>&nbsp&nbsp100 % Digital Procecss</li>
+            <li style="font-size:18px;font-family:cursive;line-height:2" class="reveal2"><i class="fa fa-spinner" aria-hidden="true" style="color:#3CB371"></i>&nbsp&nbspMost Trusted Dgital Wealth Management Firm</li>
+            <li style="font-size:18px;font-family:cursive;line-height:2" class="reveal2"><i class="fa fa-spinner" aria-hidden="true" style="color:#3CB371"></i>&nbsp&nbspPersonalized Portfolio Management</li>
+            <li style="font-size:18px;font-family:cursive;line-height:2" class="reveal2"><i class="fa fa-spinner" aria-hidden="true" style="color:#3CB371"></i>&nbsp&nbspBest-In-Class Research</li>
+            <li style="font-size:18px;font-family:cursive;line-height:2" class="reveal2"><i class="fa fa-spinner" aria-hidden="true" style="color:#3CB371"></i>&nbsp&nbspOne Platform For All Your Financial Needs</li>
+            <li style="font-size:18px;font-family:cursive;line-height:2" class="reveal2"><i class="fa fa-spinner" aria-hidden="true" style="color:#3CB371"></i>&nbsp&nbspInnovative Tools For The Modern Investor</li>
+        </div>
+        <div class="col-lg-6">
+            <img src="images/mutual.png" class="reveal21"  alt="" style="height:400px;margin-top:-12px">
+        </div>
+   </div>
+   </div>
+</section>
 
 
-    <!-- Start Blog -->
-    <div class="container-fluid bg-dark">
+<section >
+    <div class="container">
+        <br>
+        <br>
+        <div class="text-center">
+            <h3 style="color:#3CB371;margin-top:-12px;font-family:">What Is a Mutual Fund?</h3>
+        </div>
+        <br>
         <div class="row">
-            <div class="col-lg-4" style="margin-top:50px">
-                <img src="images/aboutimages.jpeg" />
+            <div class="col-lg-6">
+            <p style="font-family:Cursive;font-size:18px;color:#3CB371" class="reveal2">A mutual fund is a vast investment programme of financial investments created up of
+a pool of money collected from many investors to invest in securities like stocks, bonds,
+money market instruments, and other assets. Mutual funds are operated by
+professional money managers, who allocate the fund's assets and dedicatedly make
+efforts to produce capital gains or income for the fund's investors. A mutual fund's
+portfolio is organized and maintained to attain the investment objectives stated in its
+prospectus.</p>
+<p style="font-family:Cursive;font-size:18px;color:#3CB371" class="reveal2">Mutual funds give small or individual investors access to professionally managed
+portfolios of equities, bonds, and other securities. Each shareholder, therefore,
+participates proportionally in the gains or losses of the fund. Mutual funds invest in an
+extensive number of securities, and performance is usually tracked as the change in
+the total market cap of the fund which is derived by the assimilated performance of
+the underlying investments.</p>
             </div>
-            <div class="col-lg-8">
-                <h3 class="mt-5">What Is a Mutual Fund?</h3>
-                <p>A mutual fund is a type of financial vehicle made up of a pool of money collected from many investors
-                    to invest in securities like stocks, bonds, money market instruments, and other assets. Mutual funds
-                    are operated by professional money managers, who allocate the fund's assets and attempt to produce
-                    capital gains or income for the fund's investors. A mutual fund's portfolio is structured and
-                    maintained to match the investment objectives stated in its prospectus.</p>
-                <p>Mutual funds give small or individual investors access to professionally managed portfolios of
-                    equities, bonds, and other securities. Each shareholder, therefore, participates proportionally in
-                    the gains or losses of the fund. Mutual funds invest in a vast number of securities, and performance
-                    is usually tracked as the change in the total market cap of the fund—derived by the aggregating
-                    performance of the underlying investments.</p>
+            <div class="col-lg-6">
+            <iframe style="border:12px solid #3CB371;border-right:0px" class="reveal21" width="560" height="315" src="https://www.youtube.com/embed/PbldLCsspgE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <li style="font-size:18px;font-family:cursive;line-height:2" class="reveal2"><i class="fa fa-spinner" aria-hidden="true" style="color:#3CB371"></i>&nbsp&nbspMultiple investments.</li>
+            <li style="font-size:18px;font-family:cursive;line-height:2" class="reveal2"><i class="fa fa-spinner" aria-hidden="true" style="color:#3CB371"></i>&nbsp&nbspSharing of investment expenses.</li>
+            <li style="font-size:18px;font-family:cursive;line-height:2" class="reveal2"><i class="fa fa-spinner" aria-hidden="true" style="color:#3CB371"></i>&nbsp&nbspEasier to invest in significant markets</li>
+            <li style="font-size:18px;font-family:cursive;line-height:2" class="reveal2"><i class="fa fa-spinner" aria-hidden="true" style="color:#3CB371"></i>&nbsp&nbspEasy to approach and track.</li>
+
+            <li style="font-size:18px;font-family:cursive;line-height:2" class="reveal2"><i class="fa fa-spinner" aria-hidden="true" style="color:#3CB371"></i>&nbsp&nbspVery easy portfolio management.</li>
+            <li style="font-size:18px;font-family:cursive;line-height:2" class="reveal2"><i class="fa fa-spinner" aria-hidden="true" style="color:#3CB371"></i>&nbsp&nbspSupport of professional money managers.</li>
+            <li style="font-size:18px;font-family:cursive;line-height:2" class="reveal2"><i class="fa fa-spinner" aria-hidden="true" style="color:#3CB371"></i>&nbsp&nbspMinimal costs</li>
             </div>
         </div>
     </div>
-    <!-- End Blog -->
+</section>
 
-<!-- 
-    <div class="container">
-        <center>
-            <h3>Our Team</h3>
-        </center>
-        <div class="row">
-            <div class="col-md-6">
-                <div class="container">
-                    <section class="mx-auto my-5" style="max-width: 23rem;">
 
-                        <div class="card testimonial-card mt-2 mb-3">
-                            <div class="card-up aqua-gradient"></div>
-                            <div class="avatar mx-auto white">
-                                <img src="images/rajeshsir.jfif" class="rounded-circle img-fluid" alt="woman avatar">
-                            </div>
-                            <div class="card-body text-center">
-                                <h4 class="card-title font-weight-bold">Rajesh Kumar</h4>
-                                <hr>
-                                <p><i class="fas fa-quote-left"></i> Lorem ipsum dolor sit amet, consectetur
-                                    adipisicing elit. Eos,
-                                    adipisci</p>
-                            </div>
-                        </div>
 
-                    </section>
-                </div>
-            </div>
+
+
            
-            <div class="col-md-6">
-                <div class="container">
-                    <section class="mx-auto my-5" style="max-width: 23rem;">
 
-                        <div class="card testimonial-card mt-2 mb-3">
-                            <div class="card-up aqua-gradient"></div>
-                            <div class="avatar mx-auto white">
-                                <img src="images/sir.jpeg" class="rounded-circle img-fluid" alt="woman avatar">
-                            </div>
-                            <div class="card-body text-center">
-                                <h4 class="card-title font-weight-bold">Alok</h4>
-                                <hr>
-                                <p><i class="fas fa-quote-left"></i>Alok is a Business and Tax Consultant with over 30
-                                    years experience advising Multi-national companies in the Middle East. He is Well
-                                    versed with legal, tax and regulatory environment in the region. </p>
-                            </div>
-                        </div>
+    <!-- End why choose us -->
 
-                    </section>
-                </div>
-            </div>
-        </div>
-    </div> -->
 
 
 
