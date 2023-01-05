@@ -137,28 +137,28 @@ window.addEventListener("scroll", reveals25);
                
                     <div class="row">
                     <div class="col-lg-5 mt-5">
-                        <br><br><br><br><br>
-                                <img src="images/rajeshsir.jfif"  style="height:300px;border-bottom-left-radius:20px;border:10px solid orange;margin-top:50px"/>
-                            </div>
-                            <div class="col-lg-7">
-                                    <h1 style="margin-top:100px" class="reveal1"><font color='orange'>Ab</font>out Us</h1>
-                                    <p  style="font-size:18px;font-family:cursive;line-height:2">Mr. Rajesh is a strategic sales & marketing professional. He has significant expertise
-                                        in Global and Domestic financial Products. Due to his focused relentless dedication,
-                                        he has been able to develop international markets like GCC, UK and USA. This has
-                                        brought about investment opportunities in Equities, Mutual Funds, Real Estate Funds
-                                        and Fixed Assets</p>
-<p style="font-size:18px;font-family:cursive;line-height:2">As a far-sighted finance professional, he did remarkable work in his last assignment
-when he was based in Kuwait with Moashk Securities & Investments. Prior to this he
-has also worked with Tata Consultancy Services and Funds India.</p>
-                            </div>
-                           
-                    </div>
-            </div>
+                                <br><br><br><br><br>
+                                        <img src="images/rajeshsir.jfif"  style="height:300px;border-bottom-left-radius:20px;border:10px solid orange;margin-top:50px"/>
+                                </div>
+                                <div class="col-lg-7">
+                                        <h1 style="margin-top:100px" class="reveal1"><font color='orange'>Ab</font>out Us</h1>
+                                        <p  style="font-size:18px;font-family:cursive;line-height:2">Mr. Rajesh is a strategic sales & marketing professional. He has significant expertise
+                                                in Global and Domestic financial Products. Due to his focused relentless dedication,
+                                                he has been able to develop international markets like GCC, UK and USA. This has
+                                                brought about investment opportunities in Equities, Mutual Funds, Real Estate Funds
+                                                and Fixed Assets</p>
+        <p style="font-size:18px;font-family:cursive;line-height:2">As a far-sighted finance professional, he did remarkable work in his last assignment
+        when he was based in Kuwait with Moashk Securities & Investments. Prior to this he
+        has also worked with Tata Consultancy Services and Funds India.</p>
+                                </div>
+                                
+                        </div>
+                </div>
 
-<section>
-        <div class="container">
-                <div class="row">
-                <div class="col-lg-6">
+        <section>
+                <div class="container">
+                        <div class="row">
+                        <div class="col-lg-6">
                    <h4 style="font-family:Cursive;color:#3CB371" class="reveal2">HIS UNIQUE CAPABILITIES & COMPETENCE</h4>
                         <p style="font-family:Cursive;font-size:18px;color:#3CB371" class="reveal2">Mr. Rajesh has been the most sought sales professional not only for his
 competence in financial products but also due to certain unique capabilities like: 
@@ -184,33 +184,6 @@ competence in financial products but also due to certain unique capabilities lik
 </section>
 
 
-<section class="mt-5">
-        <div class="container">
-                <div class="row">
-                <div class="col-lg-4">
-                <img src="images/sir.jpeg" style="height:300px;" class="reveal21"/>     
-                                </div>
-                        <div class="col-lg-8">
-                             <p style="font-family:Cursive;font-size:18px;color:#3CB371" class="reveal21">Mr. Alok is a very diligent and ingenious “Business and Tax Consultant” with over three
-decades (more than 30 years) experience. In his professional field he has been a
-dependable and trustworthy advisor to multi-national companies in the Middle East.
-He is very well acquainted with legal, tax and regulatory environment in the region. </p>   
-<p class="reveal1" style="font-size:14px;font-family:cursive;line-height:2"><i class="fa fa-check" aria-hidden="true"></i>&nbsp&nbspAn Ex-Partner for EY Middle East (over 27+ years of experience) has
-experience of leading a diversified team of professionals and managing a
-successful practice in the Middle East. </p>
-
-<p class="reveal1" style="font-size:14px;font-family:cursive;line-height:2"><i class="fa fa-check" aria-hidden="true"></i>&nbsp&nbspMr. Alok is a fellow member of the Institute of the Chartered Accountants of
-India (Since 1993)</p>
-
-
-<p class="reveal1" style="font-size:14px;font-family:cursive;line-height:2"><i class="fa fa-check" aria-hidden="true"></i>&nbsp&nbspHe is an active member and speaker at various Business forums – AMCHAM,
-British Business forum, German, Canadian, Italian and Indian Business
-councils in Kuwait.</p>
-                        </div>
-                       
-                </div>
-        </div>
-</section>
 
 <section>
         <div class="container mt-5">
