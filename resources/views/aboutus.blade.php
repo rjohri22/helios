@@ -138,7 +138,7 @@ window.addEventListener("scroll", reveals25);
                     <div class="row">
                     <div class="col-lg-5 mt-5">
                         <br><br><br><br><br>
-                                <img src="images/rajeshsir.jfif" class="reveals2" style="height:300px;border-bottom-left-radius:20px;border:10px solid orange;margin-top:50px"/>
+                                <img src="images/rajeshsir.jfif"  style="height:300px;border-bottom-left-radius:20px;border:10px solid orange;margin-top:50px"/>
                             </div>
                             <div class="col-lg-7">
                                     <h1 style="margin-top:100px" class="reveal1"><font color='orange'>Ab</font>out Us</h1>
