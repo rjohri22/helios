@@ -923,11 +923,258 @@ the underlying investments.</p>
         </div>
     </div>
 </section>
+<style>
+ #test1,#test2,#test3,#test4,#test5,#test6,#test7,#test8,#test9
+ {
+    display:none
+ }   
+</style>
 
+<section class="mt-5">
+                <div class="container">
+                    <h3>Advantages of investing in Mutual Funds</h3>
+                <div class="row">
+                  
+                    <div class="col-md-7">
+                        <br>
+                        <br><br>
+                        
+                       <div id="test1" class="reveal2">
+                        <h4>Expert Management</h4>
+                        <br>
+                        <br>
+                        <img src="https://static.vecteezy.com/system/resources/thumbnails/011/684/830/small/e-learning-online-education-and-workshop-icon-elements-knowledge-for-success-business-training-and-better-ideas-bookstore-remote-training-classes-service-and-academic-graduation-free-png.png" alt="" style="height:200px;width:200px">
+                        <br>
+                            <p style="font-family:Cursive;font-size:18px;color:#3CB371">The most important advantage of investing in mutual funds
+is that they are handled by qualified and expert professionals. They are supported by
+a dedicated investment research team which routinely analyses the executions and
+performance and prospects of companies and selects suitable investments.</p>
+                       </div>
+                       <div id="test2" class="reveal2">
+                       <h4>Wide array of Portfolios</h4>
+                        <br>
+                        <br>
+                        <img src="https://www.nishkaera.com/static/media/PMSimage.22fa39ed.png" alt="" style="height:200px;width:200px">
+                        <br>
+                            <p style="font-family:Cursive;font-size:18px;color:#3CB371">The most important strategy of investment is to invest in
+different portfolios so a mutual fund is the best option for the same. Since the money
+is invested in various industries and plans it is not possible that losses will occur
+simultaneously so the risk is minimal.</p>
+                       </div>
 
+                       <div id="test3" class="reveal2">
+                       <h4>Comfortable and complacent investment</h4>
+                        <br>
+                        <br>
+                        <img src="https://freepngimg.com/thumb/investing/3-2-investing-picture-thumb.png" alt="" style="height:200px;width:200px">
+                        <br>
+                            <p style="font-family:Cursive;font-size:18px;color:#3CB371"> From a short to a long period of time mutual funds
+have the possibility to provide a higher return as they invest in multiple portfolios of
+appropriate securities.</p>
+                       </div>
+                       <div id="test4" class="reveal2">
+                       <h4>Higher possibilities of returns</h4>
+                        <br>
+                        <br>
+                        <img src="https://i.pinimg.com/originals/3c/a2/8c/3ca28c07b01ba2fd27d639d2ffbbd531.png" alt="" style="height:200px;width:200px">
+                        <br>
+                            <p style="font-family:Cursive;font-size:18px;color:#3CB371">It doesn’t hamper the busy schedules
+of clients because mutual funds investments need very less documentation and
+thereby there no hurdles like lost deliveries, delayed payments and stressful follow up
+with brokers and companies. Mutual Funds are very comfortable and easy to
+understand and make investing very convenient.</p>
+                       </div>
+                       <div id="test5" class="reveal2">
+                       <h4>Minimal expenses</h4>
+                        <br>
+                        <br>
+                        <img src="https://static.vecteezy.com/system/resources/thumbnails/012/072/527/small_2x/3d-gold-coins-stack-with-house-on-blue-arrow-up-on-transparent-home-model-with-windows-door-icon-financial-investment-growth-concept-mockup-cartoon-icon-minimal-style-3d-render-illustration-png.png" alt="" style="height:200px;width:200px">
+                        <br>
+                            <p style="font-family:Cursive;font-size:18px;color:#3CB371">Mutual funds involve very negligible expenses if compared to
+directly investing in the capital markets because the benefits of scale in brokerage,
+custodial and other fees translate into lower costs for investors.</p>
+                       </div>
 
+                       <div id="test6" class="reveal2">
+                       <h4>Clarity</h4>
+                        <br>
+                        <br>
+                        <img src="https://cdn-icons-png.flaticon.com/512/6897/6897881.png" alt="" style="height:200px;width:200px">
+                        <br>
+                            <p style="font-family:Cursive;font-size:18px;color:#3CB371">An investor gets regular information on the value of his investment through
+account statement and in addition to disclosure on the investments made by his
+scheme through portfolios disclosures.</p>
+                       </div>
 
+                       <div id="test7" class="reveal2">
+                       <h4 style="font-family:Cursive;font-size:18px;color:#3CB371">Benefit of convenience</h4>
+                        <br>
+                        <br>
+                        <img src="https://cdn3.iconfinder.com/data/icons/market-research-navy-vol-1/512/Convenience_Sample-512.png" alt="" style="height:200px;width:200px">
+                        <br>
+                            <p style="font-family:Cursive;font-size:18px;color:#3CB371">Because of characteristics like regular investment plans,
+regular withdrawal plans and dividend reinvestment plans, you can systematically
+invest or withdraw funds according to a client’s needs.</p>
+                       </div>
+                       <div id="test8" class="reveal2">
+                       <h4 style="font-family:Cursive;font-size:18px;color:#3CB371">Multiple planse</h4>
+                        <br>
+                        <br>
+                        <img src="https://cdn-icons-png.flaticon.com/512/123/123418.png" alt="" style="height:200px;width:200px">
+                        <br>
+                            <p style="font-family:Cursive;font-size:18px;color:#3CB371">You can find a mutual fund scheme that is perfect as per your
+expectations from an investment. This could be related to both your risk tolerance and
+your investment horizon.</p>
+                       </div>
+                       <div id="test9" class="reveal2"> 
+                       <h4 style="font-family:Cursive;font-size:18px;color:#3CB371">SEBI registered</h4>
+                        <br>
+                        <br>
+                        <img src="https://www.investelite.in/webassets/images-new/sebi/sebi1.png" alt="" style="height:200px;width:200px">
+                        <br>
+                            <p style="font-family:Cursive;font-size:18px;color:#3CB371">All mutual funds are registered with SEBI and the operations of
+mutual funds are regularly monitored by SEBI.</p>
+                       </div>
+                    </div>
+                    <div class="col-md-5">
+                        <h4 class="reveal2"><button class="btn btn-link" onclick="load('test1')" style="color:orange"><i class="fa fa-check" aria-hidden="true"></i>&nbsp&nbspExpert Management</button></h4>
+                        <h4 class="reveal2"><button class="btn btn-link" onclick="load('test2')"  style="color:orange"><i class="fa fa-check" aria-hidden="true"></i>&nbsp&nbspWide array of Portfolios</button></h4>
+                        <h4 class="reveal2"><button class="btn btn-link" onclick="load('test3')"  style="color:orange"><i class="fa fa-check" aria-hidden="true"></i>&nbsp&nbspComfortable and complacent investment</button></h4>
+                        <h4 class="reveal2"><button class="btn btn-link" onclick="load('test4')"  style="color:orange"><i class="fa fa-check" aria-hidden="true"></i>&nbsp&nbspHigher possibilities of returns</button></h4>
+                        <h4 class="reveal2"><button class="btn btn-link" onclick="load('test5')"  style="color:orange"><i class="fa fa-check" aria-hidden="true"></i>&nbsp&nbspMinimal expenses</button></h4>
+                        <h4 class="reveal2"><button class="btn btn-link" style="color:orange" onclick="load('test6')" ><i class="fa fa-check" aria-hidden="true"></i>&nbsp&nbspClarity</button></h4>
+                        <h4 class="reveal2"><button class="btn btn-link" onclick="load('test7')"  style="color:orange"><i class="fa fa-check" aria-hidden="true"></i>&nbsp&nbspBenefit of convenience</button></h4>
+                        <h4 class="reveal2"><button class="btn btn-link" onclick="load('test8')"  style="color:orange"><i class="fa fa-check" aria-hidden="true"></i>&nbsp&nbspMultiple plans</button></h4>
+                        <h4 class="reveal2"><button class="btn btn-link" onclick="load('test9')"  style="color:orange"><i class="fa fa-check" aria-hidden="true"></i>&nbsp&nbspSEBI registered</button></h4>
+                    </div>
+                </div>
+                </div>
+</section>
 
+<script>
+     document.getElementById('test1').style.display='block';
+    function load(val)
+    {
+       
+        if(val=='test1')
+        {
+            document.getElementById(val).style.display='block';
+            document.getElementById('test2').style.display='none';
+            document.getElementById('test3').style.display='none';
+            document.getElementById('test4').style.display='none';
+            document.getElementById('test5').style.display='none';
+            document.getElementById('test6').style.display='none';
+            document.getElementById('test7').style.display='none';
+            document.getElementById('test8').style.display='none';
+            document.getElementById('test9').style.display='none';
+
+        }
+        else if(val=='test2')
+        {
+            document.getElementById(val).style.display='block';
+            document.getElementById('test1').style.display='none';
+            document.getElementById('test3').style.display='none';
+            document.getElementById('test4').style.display='none';
+            document.getElementById('test5').style.display='none';
+            document.getElementById('test6').style.display='none';
+            document.getElementById('test7').style.display='none';
+            document.getElementById('test8').style.display='none';
+            document.getElementById('test9').style.display='none';
+
+        }
+        else if(val=='test3')
+        {
+            document.getElementById(val).style.display='block';
+            document.getElementById('test1').style.display='none';
+            document.getElementById('test2').style.display='none';
+            document.getElementById('test4').style.display='none';
+            document.getElementById('test5').style.display='none';
+            document.getElementById('test6').style.display='none';
+            document.getElementById('test7').style.display='none';
+            document.getElementById('test8').style.display='none';
+            document.getElementById('test9').style.display='none';
+
+        }
+        else if(val=='test4')
+        {
+            document.getElementById(val).style.display='block';
+            document.getElementById('test1').style.display='none';
+            document.getElementById('test3').style.display='none';
+            document.getElementById('test2').style.display='none';
+            document.getElementById('test5').style.display='none';
+            document.getElementById('test6').style.display='none';
+            document.getElementById('test7').style.display='none';
+            document.getElementById('test8').style.display='none';
+            document.getElementById('test9').style.display='none';
+
+        }
+        else if(val=='test5')
+        {
+            document.getElementById(val).style.display='block';
+            document.getElementById('test1').style.display='none';
+            document.getElementById('test3').style.display='none';
+            document.getElementById('test4').style.display='none';
+            document.getElementById('test2').style.display='none';
+            document.getElementById('test6').style.display='none';
+            document.getElementById('test7').style.display='none';
+            document.getElementById('test8').style.display='none';
+            document.getElementById('test9').style.display='none';
+
+        }
+        else if(val=='test6')
+        {
+            document.getElementById(val).style.display='block';
+            document.getElementById('test1').style.display='none';
+            document.getElementById('test3').style.display='none';
+            document.getElementById('test4').style.display='none';
+            document.getElementById('test5').style.display='none';
+            document.getElementById('test2').style.display='none';
+            document.getElementById('test7').style.display='none';
+            document.getElementById('test8').style.display='none';
+            document.getElementById('test9').style.display='none';
+
+        }
+        else if(val=='test7')
+        {
+            document.getElementById(val).style.display='block';
+            document.getElementById('test1').style.display='none';
+            document.getElementById('test3').style.display='none';
+            document.getElementById('test4').style.display='none';
+            document.getElementById('test5').style.display='none';
+            document.getElementById('test6').style.display='none';
+            document.getElementById('test2').style.display='none';
+            document.getElementById('test8').style.display='none';
+            document.getElementById('test9').style.display='none';
+
+        }
+        else if(val=='test8')
+        {
+            document.getElementById(val).style.display='block';
+            document.getElementById('test1').style.display='none';
+            document.getElementById('test3').style.display='none';
+            document.getElementById('test4').style.display='none';
+            document.getElementById('test5').style.display='none';
+            document.getElementById('test6').style.display='none';
+            document.getElementById('test7').style.display='none';
+            document.getElementById('test2').style.display='none';
+            document.getElementById('test9').style.display='none';
+
+        }
+        else if(val=='test9')
+        {
+            document.getElementById(val).style.display='block';
+            document.getElementById('test1').style.display='none';
+            document.getElementById('test3').style.display='none';
+            document.getElementById('test4').style.display='none';
+            document.getElementById('test5').style.display='none';
+            document.getElementById('test6').style.display='none';
+            document.getElementById('test7').style.display='none';
+            document.getElementById('test8').style.display='none';
+            document.getElementById('test2').style.display='none';
+
+        }
+    }
+</script>
            
 
     <!-- End why choose us -->
