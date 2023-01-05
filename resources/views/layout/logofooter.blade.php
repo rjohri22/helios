@@ -1,5 +1,5 @@
- <!--start logo!-->
-    <section class="section-padding  doctors-team-style-2" style="padding: 44px 0px 22px 0px;height:500px">
+
+<section class="section-padding  doctors-team-style-2" style="padding: 44px 0px 22px 0px;height:300px">
         <div class="container">
             <div class="section-header">
                 <div class="section-heading " style="">
