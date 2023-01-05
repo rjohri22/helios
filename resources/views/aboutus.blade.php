@@ -1,67 +1,319 @@
 @include('layout.header')
+<style>
 
+.reveals25{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveals25.active{
+  transform: translateY(0);
+  opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+        .reveals2{
+  position: relative;
+  transform: translateY(-150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveals2.active{
+  transform: translateY(0);
+  opacity: 1;
+}
+.reveal1{
+  position: relative;
+  transform: translateX(-150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal1.active{
+  transform: translateX(0);
+  opacity: 1;
+}
+.reveal21{
+  position: relative;
+  transform: translateX(-150px) scale(0);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal21.active{
+  transform: translateX(0) scale(1);
+  opacity: 1;
+}
+</style>
+<script>
+ 
+function reveal21() {
+  var reveals21 = document.querySelectorAll(".reveal21");
+
+  for (var i = 0; i < reveals21.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals21[i].getBoundingClientRect().top;
+    var elementVisible = 150;
+
+    if (elementTop < windowHeight - elementVisible) {
+      reveals21[i].classList.add("active");
+    } else {
+      reveals21[i].classList.remove("active");
+    }
+  }
+}
+
+window.addEventListener("scroll", reveal21);
+      
+
+function reveals2() {
+  var reveals2 = document.querySelectorAll(".reveals2");
+
+  for (var i = 0; i < reveals2.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals2[i].getBoundingClientRect().top;
+    var elementVisible = 150;
+
+    if (elementTop < windowHeight - elementVisible) {
+        reveals2[i].classList.add("active");
+    } else {
+        reveals2[i].classList.remove("active");
+    }
+  }
+}
+
+window.addEventListener("scroll", reveals2);
+
+function reveal1() {
+  var reveal1 = document.querySelectorAll(".reveal1");
+
+  for (var i = 0; i < reveal1.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveal1[i].getBoundingClientRect().top;
+    var elementVisible = 150;
+
+    if (elementTop < windowHeight - elementVisible) {
+        reveal1[i].classList.add("active");
+    } else {
+        reveal1[i].classList.remove("active");
+    }
+  }
+}
+
+window.addEventListener("scroll", reveal1);
+       
+       
+
+ 
+function reveals25() {
+  var reveals25 = document.querySelectorAll(".reveals25");
+
+  for (var i = 0; i < reveals25.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals25[i].getBoundingClientRect().top;
+    var elementVisible = 150;
+
+    if (elementTop < windowHeight - elementVisible) {
+        reveals25[i].classList.add("active");
+    } else {
+        reveals25[i].classList.remove("active");
+    }
+  }
+}
+
+window.addEventListener("scroll", reveals25);      
+</script>
             <div class="container">
+               
                     <div class="row">
+                    <div class="col-lg-5 mt-5">
+                        <br><br><br><br><br>
+                                <img src="images/rajeshsir.jfif" class="reveals2" style="height:300px;border-bottom-left-radius:20px;border:10px solid orange;margin-top:50px"/>
+                            </div>
                             <div class="col-lg-7">
-                                    <h1 style="margin-top:100px"><font color='orange'>Ab</font>out Us</h1>
-                                    <p>The concept of the company was conceived by the founder duo, Rajesh and Alok, who hail from the metropolitan city of Chennai. The company was established in 2021 with the aim of creating an investor-friendly co-society that is responsive to their needs and understands the value of time and money. The major workings of the company including investors are handled by the duo with Rajesh being an NRI whose expertise lies in Personal Financial Planning, Investments in Stock Market Globally, Overseas investment, and  Alok, being a Chartered Accountant & an ex- EY Partner who is well connected in the Corporate and Family office in the Middle East. The ideology of the company is to become a one-stop solution for all your financial needs without breaking a moral code or indulging in activities unfit for you.</p>
+                                    <h1 style="margin-top:100px" class="reveal1"><font color='orange'>Ab</font>out Us</h1>
+                                    <p  style="font-size:18px;font-family:cursive;line-height:2">Mr. Rajesh is a strategic sales & marketing professional. He has significant expertise
+                                        in Global and Domestic financial Products. Due to his focused relentless dedication,
+                                        he has been able to develop international markets like GCC, UK and USA. This has
+                                        brought about investment opportunities in Equities, Mutual Funds, Real Estate Funds
+                                        and Fixed Assets</p>
+<p style="font-size:18px;font-family:cursive;line-height:2">As a far-sighted finance professional, he did remarkable work in his last assignment
+when he was based in Kuwait with Moashk Securities & Investments. Prior to this he
+has also worked with Tata Consultancy Services and Funds India.</p>
                             </div>
-                             <div class="col-lg-5 mt-5">
-                                <img src="images/rajeshsir.jfif" style="height:300px;border-bottom-left-radius:20px;border:10px solid orange;margin-top:50px"/>
-                            </div>
+                           
                     </div>
             </div>
-            
-            <div class="container">
-                <div class="jumbotron">
-                    <div class="row">
-                          
-                            <div class="col-lg-5">
-                                 <img src="images/sir.jpeg" style="height:300px;border-bottom-left-radius:20px;border:10px solid gray"/>
-                            </div> 
-                              <div class="col-lg-7">
-                                  <p>
-                                      "We believe in service to society through financial help and asset safety"
-Helios Fintec brings you the comfort of understanding finance from your home. It is a one-stop solution for all your financial needs including transactions and assets. Helpful for both individuals and corporate seeking to understand how investing, stock market, and loaning works, Helios Fintec caters to your most specific needs as well.
-                                One of the finest examples for this would be our research department which is always ready for consultation in cases of intraday and delivery trading. Very few firms offer such a department dedicated to such a complicated procedure.
-The creation of wealth from income without compromising your personal integrity is part of Helios Fintec portfolio.
-We strategize and execute the plan by offering you a three-fold return transacting from your account itself. This in it's sense means that you will have your record on your transactions as both the account holder and investor. The responsibility of transaction, however, lies in us.
-Money is a commodity and it is important to safeguard it and multiply it. You can either do it by investing it into stock market or by becoming a venture capitalist. However, you need a right sense of direction and guidance into this vast world that we call ‘Stock Market’. 
-There are times when a ten-rupee note can make you a millionaire and a million-dollar stock bring you on the streets. 
-                                  </p>
-                              </div> 
-                    </div>
-                    </div>
-            </div>
-            <div class="container">
-                    <div class="row">
-                            <div class="col-lg-6">
-                                   <p>It all depends on how well you understand inflation and how the shares work. Helios Fintec creates a perfect plan for you to understand through its Investment Advisory so that you and your money can stay safe in the Stock Market.
-The stock market in India is highly untapped and requires the expertise of investors who have explored and exploited the financial assets to the fullest. We at Helios Fintec provide you with the said expertise and the option to seek that expertise.
-Money is also important in your general day to day life. </p> 
-                            </div>
-                            <div class="col-lg-6">
-                                <img src="https://digidpr.in/wp-content/uploads/2021/06/web-main.gif" style="height:300px;width:100%"/>
-                            </div>
-                    </div>
-            </div>
-            
-            
-            
-             <div class="container">
+
+<section>
+        <div class="container">
+                <div class="row">
+                <div class="col-lg-6">
+                   <h4 style="font-family:Cursive;color:#3CB371" class="reveal2">HIS UNIQUE CAPABILITIES & COMPETENCE</h4>
+                        <p style="font-family:Cursive;font-size:18px;color:#3CB371" class="reveal2">Mr. Rajesh has been the most sought sales professional not only for his
+competence in financial products but also due to certain unique capabilities like: 
+<li style="font-size:18px;font-family:cursive;line-height:2" class="reveal1"><i class="fa fa-spinner" aria-hidden="true" style="color:#3CB371"></i>&nbsp&nbspConcern for the welfare of his clients</li>
+            <li style="font-size:18px;font-family:cursive;line-height:2" class="reveal1"><i class="fa fa-spinner" aria-hidden="true" style="color:#3CB371"></i>&nbsp&nbspStrong analytical skills
+</li>
+            <li style="font-size:18px;font-family:cursive;line-height:2" class="reveal1"><i class="fa fa-spinner" aria-hidden="true" style="color:#3CB371"></i>&nbsp&nbspAuthentic and reasonable guidance.</li>
+            <li style="font-size:18px;font-family:cursive;line-height:2" class="reveal1"><i class="fa fa-spinner" aria-hidden="true" style="color:#3CB371"></i>&nbsp&nbspEthical Professional.</li>
+
+            <li style="font-size:18px;font-family:cursive;line-height:2" class="reveal1"><i class="fa fa-spinner" aria-hidden="true" style="color:#3CB371"></i>&nbsp&nbspVery ardent and enthusiastic.</li>
+            <li style="font-size:18px;font-family:cursive;line-height:2" class="reveal1"><i class="fa fa-spinner" aria-hidden="true" style="color:#3CB371"></i>&nbsp&nbspSerenity and calmness.</li>
+            <li style="font-size:18px;font-family:cursive;line-height:2" class="reveal1"><i class="fa fa-spinner" aria-hidden="true" style="color:#3CB371"></i>&nbsp&nbspVery meticulous and industrious</li>
+            <li style="font-size:18px;font-family:cursive;line-height:2" class="reveal1"><i class="fa fa-spinner" aria-hidden="true" style="color:#3CB371"></i>&nbsp&nbspAmiable and understanding for all those who approach him</li>
+      
+</p>
+                </div>
+                <div class="col-lg-6">
+                        <br><br><br><br>
+                       <img class="reveal21" src="https://d24uab5gycr2uz.cloudfront.net/uploads/other_pic/IOMZgKUBCr.png"/>
+                </div>
+                </div>
+        </div>
+</section>
+
+
+<section class="mt-5">
+        <div class="container">
+                <div class="row">
+                <div class="col-lg-4">
+                <img src="images/sir.jpeg" style="height:300px;" class="reveal21"/>     
+                                </div>
+                        <div class="col-lg-8">
+                             <p style="font-family:Cursive;font-size:18px;color:#3CB371" class="reveal21">Mr. Alok is a very diligent and ingenious “Business and Tax Consultant” with over three
+decades (more than 30 years) experience. In his professional field he has been a
+dependable and trustworthy advisor to multi-national companies in the Middle East.
+He is very well acquainted with legal, tax and regulatory environment in the region. </p>   
+<p class="reveal1" style="font-size:14px;font-family:cursive;line-height:2"><i class="fa fa-check" aria-hidden="true"></i>&nbsp&nbspAn Ex-Partner for EY Middle East (over 27+ years of experience) has
+experience of leading a diversified team of professionals and managing a
+successful practice in the Middle East. </p>
+
+<p class="reveal1" style="font-size:14px;font-family:cursive;line-height:2"><i class="fa fa-check" aria-hidden="true"></i>&nbsp&nbspMr. Alok is a fellow member of the Institute of the Chartered Accountants of
+India (Since 1993)</p>
+
+
+<p class="reveal1" style="font-size:14px;font-family:cursive;line-height:2"><i class="fa fa-check" aria-hidden="true"></i>&nbsp&nbspHe is an active member and speaker at various Business forums – AMCHAM,
+British Business forum, German, Canadian, Italian and Indian Business
+councils in Kuwait.</p>
+                        </div>
+                       
+                </div>
+        </div>
+</section>
+
+<section>
+        <div class="container mt-5">
+                <div class="text-center">
+                        <h3 class="reveals25">OUTSTANDING SKILLS</h3>
+                </div>
+                <div class="row">
+                        <div class="col-md-3">
+                                <div class="card reveals25">
+                                        <div class="card-body">
+                                        <img src="images/about/f4.png" alt="" style="height:200px;width:200px">
+                                        </div>
+                                        <div class="card-header bg-white">
+                                                <p style="font-family:Cursive;font-size:18px;color:#3CB371">Conversational abilities</p>
+                                        </div>
+                                </div>
+                        </div>
+                        <div class="col-md-3">
+                        <div class="card reveals25">
+                                        <div class="card-body">
+                                        <img src="images/about/f5.png" alt="" style="height:200px;width:200px">
+                                        </div>
+                                        <div class="card-header bg-white">
+                                                <p style="font-family:Cursive;font-size:18px;color:#3CB371">Adroit in calculations.</p>
+                                        </div>
+                                </div>
+                        </div>
+                        <div class="col-md-3">
+                        <div class="card reveals25">
+                                        <div class="card-body">
+                                        <img src="images/about/f3.png" alt="" style="height:200px;width:200px">
+                                        </div>
+                                        <div class="card-header bg-white">
+                                       
+                                                <p style="font-family:Cursive;font-size:18px;color:#3CB371">Planning skills
+                                       </p>
+                                        </div>
+                                </div>
+                        </div>
+                        <div class="col-md-3">
+                        <div class="card reveals25">
+                                        <div class="card-body">
+                                        <img src="images/about/f6.png" alt="" style="height:200px;width:200px">
+                                        </div>
+                                        <div class="card-header bg-white">
+                                                <p style="font-family:Cursive;font-size:18px;color:#3CB371">Time management</p>
+                                        </div>
+                                </div>
+                        </div>
+                </div>
                 
-                    <div class="row mt-5">
-                          
-                            <div class="col-lg-12 mt-5">
-                                 <p> Buying a house, building your business or sending your children abroad for studying. All of these are examples of activities that require huge amounts of money. But there are times when you may not really have it. This is often embarrassing and may lead to unforeseen situations for the person facing this dilemma. Such situations and consequences can be avoided if we have a certain amount kept aside which is always multiplying for our benefit.
-Helios Fintec helps you get adequate amounts of loans at low interest from relevant banks within a week or so. We also handle your paperwork because we know it is a hassle. Getting a loan from a bank is never easy but with us , it is never hard.
-If you’re worried about how to turn your liquid money into a profitable asset and are seeking help, you’ve come to the right place. At Helios Fintec, you can understand the importance of investing your money into real estate and gold apart from investing it in the stock market. We also teach you ways on how to buy assets at lower costs and then turning them into profitable investments.
-All in all, we’re your first option and last helper as our service stands for self and society. As someone once said, “Help will be given to those who ask for it.”</p>
-                            </div> 
-                          
-                    </div>
-                
-            </div>
+                <div class="row mt-5">
+                        <div class="col-md-3">
+                                <div class="card reveals25">
+                                        <div class="card-body">
+                                        <img src="images/about/f1.png" alt="" style="height:200px;width:200px">
+                                        </div>
+                                        <div class="card-header bg-white">
+                                                <p style="font-family:Cursive;font-size:18px;color:#3CB371">Expert in dealing with issues and complications</p>
+                                        </div>
+                                </div>
+                        </div>
+                        <div class="col-md-3">
+                        <div class="card reveals25">
+                                        <div class="card-body">
+                                        <img src="images/about/f22.png" alt="" style="height:200px;width:200px">
+                                        </div>
+                                        <div class="card-header bg-white">
+                                                <p style="font-family:Cursive;font-size:18px;color:#3CB371">In depth cognizance of commercial ambiance</p>
+                                        </div>
+                                </div>
+                        </div>
+                        <div class="col-md-3">
+                        <div class="card reveals25">
+                                        <div class="card-body">
+                                        <img src="images/about/f7.png" alt="" style="height:200px;width:200px">
+                                        </div>
+                                        <div class="card-header bg-white">
+                                       
+                                                <p style="font-family:Cursive;font-size:18px;color:#3CB371">Rational and methodical thinking
+                                    </p>
+                                        </div>
+                                </div>
+                        </div>
+                        <div class="col-md-3">
+                        <div class="card reveals25">
+                                        <div class="card-body">
+                                        <img src="images/about/f8.png" alt="" style="height:200px;width:200px">
+                                        </div>
+                                        <div class="card-header bg-white">
+                                                <br>
+                                                <p style="font-family:Cursive;font-size:18px;color:#3CB371;margin-top:8px">Documentation skills.&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</p>
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+        </div>
+</section>
+
+
+
+
+
 
 
     @include('layout.logofooter')  

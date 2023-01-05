@@ -108,6 +108,9 @@ Route::get('afterregister/thank-you',[AuthController::class, 'afterregister']);
         return view('carloan');
     });
 
+    Route::get('/aboutus', function () {
+        return view('aboutus');
+    });
 
 // =====================================================================================
 Route::middleware(['auth','verify'])->group(function () {
@@ -125,9 +128,6 @@ Route::middleware(['auth','verify'])->group(function () {
         return view('insurancePage');
     });
 
-    Route::get('/about', function () {
-        return view('about');
-    });
 
 
    
