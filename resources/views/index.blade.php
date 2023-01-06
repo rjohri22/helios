@@ -1007,7 +1007,7 @@ scheme through portfolios disclosures.</p>
                        </div>
 
                        <div id="test7" class="reveal2">
-                       <h4 style="font-family:Cursive;font-size:18px;color:#3CB371">Benefit of convenience</h4>
+                       <h4 >Benefit of convenience</h4>
                         <br>
                         <br>
                         <img src="https://cdn3.iconfinder.com/data/icons/market-research-navy-vol-1/512/Convenience_Sample-512.png" alt="" style="height:200px;width:200px">

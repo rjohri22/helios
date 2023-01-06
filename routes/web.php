@@ -112,6 +112,13 @@ Route::get('afterregister/thank-you',[AuthController::class, 'afterregister']);
         return view('aboutus');
     });
 
+
+    Route::get('/service', function () {
+        return view('service');
+    });
+
+
+
 // =====================================================================================
 Route::middleware(['auth','verify'])->group(function () {
 
