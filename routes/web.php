@@ -117,6 +117,10 @@ Route::get('afterregister/thank-you',[AuthController::class, 'afterregister']);
         return view('service');
     });
 
+    Route::get('/blog', function () {
+        return view('blog');
+    });
+
 
 
 // =====================================================================================
