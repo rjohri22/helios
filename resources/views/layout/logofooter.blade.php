@@ -347,7 +347,7 @@
                             </li>
                             <li> <a href="/service" class="text-custom-white">Service</a>
                             </li>
-                            <li> <a href="blog.html" class="text-custom-white">Blog</a>
+                            <li> <a href="/blog" class="text-custom-white">Blog</a>
                             </li>
                             <li> <a href="team.html" class="text-custom-white">Team</a>
                             </li>
