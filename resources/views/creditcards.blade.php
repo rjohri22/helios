@@ -832,7 +832,7 @@ A credit card is a type of credit facility, provided by banks that allow custome
 
 
  
-    @include('layout.logofooter')  
+
     
    
     @include('layout.mutualfundfooter')
